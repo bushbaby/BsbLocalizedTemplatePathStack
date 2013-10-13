@@ -21,7 +21,7 @@ class LocalizedTemplatePathStack extends TemplatePathStack implements ResolverIn
     /**
      * @var string format of template name conversion
      */
-    protected $nameConversionPattern = '#DIRNAME#/#FILENAME#-#LOCALE#.#EXTENSION#';
+    protected $nameConversionPattern = '#DIRNAME#/#FILENAME#/#LOCALE#.#EXTENSION#';
 
     /**
      * Configure object
