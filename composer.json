@@ -1,0 +1,33 @@
+{
+    "name": "bushbaby/bsb-localized-template-path-stack",
+    "description": "BsbLocalizedTemplatePathStack is a small ZF2 module that provides a template stack resolver which resolves to templates based on the current locale.",
+    "type": "library",
+    "keywords": ["zf2", "i18n", "module", "template"],
+    "homepage": "https://github.com/bushbaby/BsbLocalizedTemplatePathStack",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Bas Kamer",
+            "homepage": "http://bushbaby.nl"
+        }
+    ],
+    "minimum-stability" : "dev",
+    "require": {
+        "php": ">=5.3.3",
+        "ext-intl" : "*",
+        "zendframework/zend-mvc": ">=2.2.2",
+        "zendframework/zend-servicemanager": ">=2.2.2",
+        "zendframework/zend-view": ">=2.2.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.8.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "BsbLocalizedTemplatePathStack": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
+}

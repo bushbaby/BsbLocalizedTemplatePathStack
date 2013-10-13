@@ -1,0 +1,11 @@
+<?php
+
+return array(
+    'bsb_localized_template_path_stack' => array(
+        'fallback_locale' => null,
+        /**
+         * template_path_stack
+         */
+        'name_conversion_pattern' => '#DIRNAME#/#FILENAME#/#LOCALE#.#EXTENSION#',
+    ),
+);
