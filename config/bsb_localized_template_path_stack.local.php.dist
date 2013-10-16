@@ -2,10 +2,7 @@
 
 return array(
     'bsb_localized_template_path_stack' => array(
-        'fallback_locale' => null,
-        /**
-         * template_path_stack
-         */
+        'fallback_locale' => null, // tries to get fallback from translator 'locale' config option
         'name_conversion_pattern' => '#DIRNAME#/#FILENAME#/#LOCALE#.#EXTENSION#',
     ),
 );
