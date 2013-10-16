@@ -41,8 +41,15 @@ The the resolver is automaticly configured with the paths supplied in the view_m
 
 **fallback_locale** string, defaults to null
    
-The resolver will use this locale as fallback locale when the requested template has not been provided.
+The resolver will use this locale as fallback locale when primary locale will not resolve.
 
+Note: When the value is not a string, the factory will get the application translator and use its fallback locale. The second value in the translator locale option represents the fallback locale within the application translator.
+
+```
+'translator' => array(
+    'locale' => array(null, 'en_GB')
+)
+```
  		
 **name_conversion_pattern** string, defaults to '#DIRNAME#/#FILENAME#/#LOCALE#.#EXTENSION#'
 
