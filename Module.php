@@ -12,7 +12,7 @@ class Module
         /** @var $sm \Zend\ServiceManager\ServiceManager */
         $sm = $e->getApplication()->getServiceManager();
 
-        $e->getApplication()->getEventManager()->getSharedManager()->attach('Zend\Mvc\Application', MvcEvent::EVENT_RENDER, function(MvcEvent $e) use ($sm) {
+        $e->getApplication()->getEventManager()->getSharedManager()->attach('Zend\Mvc\Application', MvcEvent::EVENT_DISPATCH, function(MvcEvent $e) use ($sm) {
             /** @var AggregateResolver $ar */
             $ar = $sm->get('ViewResolver');
             $ar->attach($sm->get('BsbLocalizedTemplatePathStack\LocalizedTemplatePathStack'));
